@@ -10,11 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var emailTxt: UITextField!
+    
+    @IBOutlet weak var passwordTxt: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func signInCliclked(_ sender: Any) {
+        performSegue(withIdentifier: "toFeedVC", sender: nil)
+        
+        
+    }
+    
+    @IBAction func signUpClicked(_ sender: Any) {
+        
+        
+    }
 }
 

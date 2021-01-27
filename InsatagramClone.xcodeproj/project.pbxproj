@@ -13,6 +13,8 @@
 		0000E85825C18D4B00E9F536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0000E85625C18D4B00E9F536 /* Main.storyboard */; };
 		0000E85A25C18D4C00E9F536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0000E85925C18D4C00E9F536 /* Assets.xcassets */; };
 		0000E85D25C18D4C00E9F536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0000E85B25C18D4C00E9F536 /* LaunchScreen.storyboard */; };
+		00771B6C25C1D19800840B5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00771B6B25C1D19800840B5C /* GoogleService-Info.plist */; };
+		6628D30E8381B7C5B8CBFA36 /* libPods-InsatagramClone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8B800F6152BE5641B9F76E /* libPods-InsatagramClone.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		0000E85925C18D4C00E9F536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0000E85C25C18D4C00E9F536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0000E85E25C18D4C00E9F536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00771B6B25C1D19800840B5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5E10E60CCDEA9459C6BFC3CC /* Pods-InsatagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsatagramClone.release.xcconfig"; path = "Target Support Files/Pods-InsatagramClone/Pods-InsatagramClone.release.xcconfig"; sourceTree = "<group>"; };
+		606BCD3B413CE2C31CBF361C /* Pods-InsatagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsatagramClone.debug.xcconfig"; path = "Target Support Files/Pods-InsatagramClone/Pods-InsatagramClone.debug.xcconfig"; sourceTree = "<group>"; };
+		BC8B800F6152BE5641B9F76E /* libPods-InsatagramClone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InsatagramClone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6628D30E8381B7C5B8CBFA36 /* libPods-InsatagramClone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				0000E84F25C18D4B00E9F536 /* InsatagramClone */,
 				0000E84E25C18D4B00E9F536 /* Products */,
+				732405B31780991C00DC766F /* Pods */,
+				57F0C486CE61B381F9A1CC8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,27 @@
 				0000E85925C18D4C00E9F536 /* Assets.xcassets */,
 				0000E85B25C18D4C00E9F536 /* LaunchScreen.storyboard */,
 				0000E85E25C18D4C00E9F536 /* Info.plist */,
+				00771B6B25C1D19800840B5C /* GoogleService-Info.plist */,
 			);
 			path = InsatagramClone;
+			sourceTree = "<group>";
+		};
+		57F0C486CE61B381F9A1CC8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC8B800F6152BE5641B9F76E /* libPods-InsatagramClone.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		732405B31780991C00DC766F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				606BCD3B413CE2C31CBF361C /* Pods-InsatagramClone.debug.xcconfig */,
+				5E10E60CCDEA9459C6BFC3CC /* Pods-InsatagramClone.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0000E86125C18D4C00E9F536 /* Build configuration list for PBXNativeTarget "InsatagramClone" */;
 			buildPhases = (
+				99B2981CD54F52C19869945F /* [CP] Check Pods Manifest.lock */,
 				0000E84925C18D4B00E9F536 /* Sources */,
 				0000E84A25C18D4B00E9F536 /* Frameworks */,
 				0000E84B25C18D4B00E9F536 /* Resources */,
+				37339D106559B3EAAA65B579 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				0000E85D25C18D4C00E9F536 /* LaunchScreen.storyboard in Resources */,
+				00771B6C25C1D19800840B5C /* GoogleService-Info.plist in Resources */,
 				0000E85A25C18D4C00E9F536 /* Assets.xcassets in Resources */,
 				0000E85825C18D4B00E9F536 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37339D106559B3EAAA65B579 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InsatagramClone/Pods-InsatagramClone-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InsatagramClone/Pods-InsatagramClone-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InsatagramClone/Pods-InsatagramClone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B2981CD54F52C19869945F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InsatagramClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0000E84925C18D4B00E9F536 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		0000E86225C18D4C00E9F536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 606BCD3B413CE2C31CBF361C /* Pods-InsatagramClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +373,7 @@
 		};
 		0000E86325C18D4C00E9F536 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E10E60CCDEA9459C6BFC3CC /* Pods-InsatagramClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
