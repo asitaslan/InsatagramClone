@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,13 @@
 		0000E85825C18D4B00E9F536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0000E85625C18D4B00E9F536 /* Main.storyboard */; };
 		0000E85A25C18D4C00E9F536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0000E85925C18D4C00E9F536 /* Assets.xcassets */; };
 		0000E85D25C18D4C00E9F536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0000E85B25C18D4C00E9F536 /* LaunchScreen.storyboard */; };
+		001FD69E25CB405B00DCE49D /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 001FD69D25CB405B00DCE49D /* libSDWebImage.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		00771B6C25C1D19800840B5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00771B6B25C1D19800840B5C /* GoogleService-Info.plist */; };
-		6628D30E8381B7C5B8CBFA36 /* libPods-InsatagramClone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8B800F6152BE5641B9F76E /* libPods-InsatagramClone.a */; };
+		00E9E86625CAADBE0061F56A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9E86525CAADBD0061F56A /* FeedViewController.swift */; };
+		00E9E86825CAADE90061F56A /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9E86725CAADE90061F56A /* UploadViewController.swift */; };
+		00E9E86A25CAAE140061F56A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9E86925CAAE140061F56A /* SettingsViewController.swift */; };
+		00E9E86C25CB06D70061F56A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9E86B25CB06D70061F56A /* FeedCell.swift */; };
+		6628D30E8381B7C5B8CBFA36 /* libPods-InsatagramClone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8B800F6152BE5641B9F76E /* libPods-InsatagramClone.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +31,13 @@
 		0000E85925C18D4C00E9F536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0000E85C25C18D4C00E9F536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0000E85E25C18D4C00E9F536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001FD69B25CB3FC400DCE49D /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		001FD69D25CB405B00DCE49D /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		00771B6B25C1D19800840B5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		00E9E86525CAADBD0061F56A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		00E9E86725CAADE90061F56A /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		00E9E86925CAAE140061F56A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		00E9E86B25CB06D70061F56A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		5E10E60CCDEA9459C6BFC3CC /* Pods-InsatagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsatagramClone.release.xcconfig"; path = "Target Support Files/Pods-InsatagramClone/Pods-InsatagramClone.release.xcconfig"; sourceTree = "<group>"; };
 		606BCD3B413CE2C31CBF361C /* Pods-InsatagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsatagramClone.debug.xcconfig"; path = "Target Support Files/Pods-InsatagramClone/Pods-InsatagramClone.debug.xcconfig"; sourceTree = "<group>"; };
 		BC8B800F6152BE5641B9F76E /* libPods-InsatagramClone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InsatagramClone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001FD69E25CB405B00DCE49D /* libSDWebImage.a in Frameworks */,
 				6628D30E8381B7C5B8CBFA36 /* libPods-InsatagramClone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +85,10 @@
 				0000E85B25C18D4C00E9F536 /* LaunchScreen.storyboard */,
 				0000E85E25C18D4C00E9F536 /* Info.plist */,
 				00771B6B25C1D19800840B5C /* GoogleService-Info.plist */,
+				00E9E86525CAADBD0061F56A /* FeedViewController.swift */,
+				00E9E86725CAADE90061F56A /* UploadViewController.swift */,
+				00E9E86925CAAE140061F56A /* SettingsViewController.swift */,
+				00E9E86B25CB06D70061F56A /* FeedCell.swift */,
 			);
 			path = InsatagramClone;
 			sourceTree = "<group>";
@@ -80,6 +96,8 @@
 		57F0C486CE61B381F9A1CC8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				001FD69D25CB405B00DCE49D /* libSDWebImage.a */,
+				001FD69B25CB3FC400DCE49D /* libSDWebImage.a */,
 				BC8B800F6152BE5641B9F76E /* libPods-InsatagramClone.a */,
 			);
 			name = Frameworks;
@@ -91,7 +109,6 @@
 				606BCD3B413CE2C31CBF361C /* Pods-InsatagramClone.debug.xcconfig */,
 				5E10E60CCDEA9459C6BFC3CC /* Pods-InsatagramClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,9 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E9E86C25CB06D70061F56A /* FeedCell.swift in Sources */,
 				0000E85525C18D4B00E9F536 /* ViewController.swift in Sources */,
+				00E9E86825CAADE90061F56A /* UploadViewController.swift in Sources */,
 				0000E85125C18D4B00E9F536 /* AppDelegate.swift in Sources */,
+				00E9E86625CAADBE0061F56A /* FeedViewController.swift in Sources */,
 				0000E85325C18D4B00E9F536 /* SceneDelegate.swift in Sources */,
+				00E9E86A25CAAE140061F56A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
