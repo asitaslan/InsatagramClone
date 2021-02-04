@@ -8,7 +8,6 @@ target 'InsatagramClone' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
-  pod 'Kingfisher', '~> 6.0'
   pod 'SDWebImage', :modular_headers => true
 
 end

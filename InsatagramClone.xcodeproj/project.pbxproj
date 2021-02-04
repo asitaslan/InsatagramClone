@@ -13,7 +13,6 @@
 		0000E85825C18D4B00E9F536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0000E85625C18D4B00E9F536 /* Main.storyboard */; };
 		0000E85A25C18D4C00E9F536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0000E85925C18D4C00E9F536 /* Assets.xcassets */; };
 		0000E85D25C18D4C00E9F536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0000E85B25C18D4C00E9F536 /* LaunchScreen.storyboard */; };
-		001FD69E25CB405B00DCE49D /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 001FD69D25CB405B00DCE49D /* libSDWebImage.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		00771B6C25C1D19800840B5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00771B6B25C1D19800840B5C /* GoogleService-Info.plist */; };
 		00E9E86625CAADBE0061F56A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9E86525CAADBD0061F56A /* FeedViewController.swift */; };
 		00E9E86825CAADE90061F56A /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9E86725CAADE90061F56A /* UploadViewController.swift */; };
@@ -48,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001FD69E25CB405B00DCE49D /* libSDWebImage.a in Frameworks */,
 				6628D30E8381B7C5B8CBFA36 /* libPods-InsatagramClone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
@@ -18,6 +19,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var userCommentArray = [String]()
     var likeArray = [Int]()
     var userImageArray = [String]()
+    var documentIdArray = [String]()
     
     
     
@@ -37,18 +39,27 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         let fireStoreDatabase = Firestore.firestore()
+        
+        
        
-        fireStoreDatabase.collection("Posts").addSnapshotListener { (snapshot, error) in
+        fireStoreDatabase.collection("Posts").order(by: "data", descending: true).addSnapshotListener { (snapshot, error) in
             if error != nil {
                 print(error?.localizedDescription)
                 
             }else{
                 if snapshot?.isEmpty != true  && snapshot != nil{
                     
+                    self.userImageArray.removeAll(keepingCapacity: false)
+                    self.userEmailArray.removeAll(keepingCapacity: false)
+                    self.userCommentArray.removeAll(keepingCapacity: false)
+                    self.likeArray.removeAll(keepingCapacity: false)
+                    self.documentIdArray.removeAll(keepingCapacity: false)
+                    
+                    
                     for document in  snapshot!.documents {
                         
                         let documentID = document.documentID
-                        print(documentID)
+                        self.documentIdArray.append(documentID)
                         
                         if let postedBy = document.get("postedBy") as? String {
                             self.userEmailArray.append(postedBy)
@@ -86,7 +97,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.likeLbl.text = String(likeArray[indexPath.row])
         cell.userEmailLbl.text = userEmailArray[indexPath.row]
         cell.commentViewLbl.text = userCommentArray[indexPath.row]
-        cell.imageView?.image = UIImage(named : "select.png")
+        cell.userImageView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row]))
+        cell.documentIdLbl.text = documentIdArray[indexPath.row]
         return cell
       }
       
